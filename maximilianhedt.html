@@ -61,7 +61,7 @@
         <div class="p-8 text-center">
             <!-- Profile Picture -->
             <div class="flex justify-center -mt-16">
-                <img src="https://framerusercontent.com/images/MM6BfchoYgYDwn7SFswR86evkM.png?scale-down-to=1024" class="w-24 h-24 rounded-full border-4 border-white object-cover" alt="Christian Walter's profile picture" onerror="this.onerror=null;this.src='https://placehold.co/96x96/f2eae4/023621?text=CW';">
+                <img src="https://framerusercontent.com/images/NEzpyQuKouc3tm1cJbZGWrDE.jpg?scale-down-to=1024" class="w-24 h-24 rounded-full border-4 border-white object-cover" alt="Christian Walter's profile picture" onerror="this.onerror=null;this.src='https://placehold.co/96x96/f2eae4/023621?text=CW';">
             </div>
 
             <!-- Name and Title -->
@@ -138,23 +138,23 @@
             // VCF (Virtual Contact File) data
             const vcfData = `BEGIN:VCARD
 VERSION:3.0
-FN:Christian Walter
+FN:Maximilian Hedt
 ORG:RegionRise
 TITLE:Managing Director
 TEL;TYPE=WORK,VOICE;PREF=1:+4917645801735
 TEL;TYPE=WORK,VOICE:+666222397680
-EMAIL:christian.walter@regionrise.com
-URL;TYPE=LINKEDIN:https://www.linkedin.com/in/chrwalter/
+EMAIL:Maximilian.Hedt@regionrise.com
+URL;TYPE=LINKEDIN:https://www.linkedin.com/in/maximilian-hedt-18452256/
 URL:https://regionrise.com
 ADR;TYPE=WORK:;;;Berlin;;;Germany
-PHOTO;VALUE=URL:https://framerusercontent.com/images/MM6BfchoYgYDwn7SFswR86evkM.png?scale-down-to=1024
+PHOTO;VALUE=URL:https://framerusercontent.com/images/NEzpyQuKouc3tm1cJbZGWrDE.jpg?scale-down-to=1024
 END:VCARD`;
 
             const blob = new Blob([vcfData], { type: 'text/vcard;charset=utf-8' });
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = url;
-            link.download = 'Christian_Walter.vcf';
+            link.download = 'Maxmilian_Hedt.vcf';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -164,8 +164,8 @@ END:VCARD`;
         // --- Functionality for the "Share" Button ---
         const shareBtn = document.getElementById('shareBtn');
         const shareData = {
-            title: 'Christian Walter - RegionRise',
-            text: 'Check out Christian Walter\'s digital business card.',
+            title: 'Maximilian Hedt - RegionRise',
+            text: 'Check out Maximilian Hedt\'s digital business card.',
             url: window.location.href
         };
 
